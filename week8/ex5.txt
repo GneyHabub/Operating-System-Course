@@ -1,0 +1,1 @@
+Physical address is an address of some real portion of the RAM, whereas Virtual address is an address of a page in some table, which maps to a Physical address.

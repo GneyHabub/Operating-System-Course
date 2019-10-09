@@ -1,0 +1,25 @@
+Alexanders-MacBook-Air:~ gneyhabub$ vm_stat
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                              115125.
+Pages active:                            664207.
+Pages inactive:                          407507.
+Pages speculative:                       243915.
+Pages throttled:                              0.
+Pages wired down:                        462931.
+Pages purgeable:                          61959.
+"Translation faults":                 134788890.
+Pages copy-on-write:                    3000112.
+Pages zero filled:                     67077806.
+Pages reactivated:                       847188.
+Pages purged:                           1956117.
+File-backed pages:                       452275.
+Anonymous pages:                         863354.
+Pages stored in compressor:              647080.
+Pages occupied by compressor:            203262.
+Decompressions:                         4613035.
+Compressions:                           6090405.
+Pageins:                                4470669.
+Pageouts:                                  6035.
+Swapins:                                4530363.
+Swapouts:                               4760645.
+Alexanders-MacBook-Air:~ gneyhabub$ 

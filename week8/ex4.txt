@@ -1,0 +1,14 @@
+output:
+
+Alexanders-MacBook-Air:week8 gneyhabub$ gcc -o p ex4.c
+Alexanders-MacBook-Air:week8 gneyhabub$ ./p
+11255808 KB
+21753856 KB
+32239616 KB
+42725376 KB
+53211136 KB
+63696896 KB
+74182656 KB
+84668416 KB
+95154176 KB
+105639936 KB

@@ -1,0 +1,2 @@
+8 KB = 8*1024 bytes = 2^13 bytes => offset = 13 bits;
+So, for the entries left 2^(16-13) = 8
