@@ -1,0 +1,2 @@
+To increase the hit/miss rate we need to increase the number of hits (decrease the number of misses).
+To decrease the hit/miss rate we need to decrease the number of hits (increase the number of misses).

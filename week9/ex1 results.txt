@@ -1,0 +1,8 @@
+Enter the number of pages: 10
+HITRATE: 0.010101
+
+Enter the number of pages: 50
+HITRATE: 0.053741
+
+Enter the number of pages: 100
+HITRATE: 0.094092
