@@ -67,6 +67,8 @@ int main(){
     // {
     //     printf("%d\n", arr[i]);
     // }
+
+    printf("HITS %d\nMISSES %d\n", counter - misses, misses);
     
     printf("HITRATE: %f\n", (float)(counter - misses)/misses);
     

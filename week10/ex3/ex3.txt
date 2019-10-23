@@ -1,0 +1,6 @@
+Alexanders-MacBook-Air:week10 gneyhabub$ sh ex3.sh
+-rwxrwxrwx  1 gneyhabub  staff  0 Oct 23 14:35 _ex3.txt
+
+660 - owner and others(not groups) can read and write (-rw-rw----)
+775 - all permitions to everyone exept for the groups which can only read and execute (-rwxrwxr-x)
+777 - all permitions to everyone (-rwxrwxrwx)

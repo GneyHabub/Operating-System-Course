@@ -1,0 +1,4 @@
+Alexanders-MacBook-Air:week10 gneyhabub$ sh ex1.sh
+2909803 _ex1.txt
+2909803 _ex1_1.txt
+2909803 _ex1_2.txt
