@@ -1,0 +1,3 @@
+First programm will print "Hello" twice, and the first one will do it only once.
+It happens because \n character in secund programm flushes the buffer before second proccess inherits data from the first one.
+In first program we do not have this character, so the unflushed buffer is passed to the child proccess^ that's why "Hello" is printed twice.
