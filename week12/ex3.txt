@@ -1,0 +1,30 @@
+BUFFER_SIZE 1024:
+    with O-SYNC:
+        real	0m0.020s
+        user	0m0.002s
+        sys	0m0.009s
+    without:
+        real	0m0.008s
+        user	0m0.002s
+        sys	0m0.004s
+
+BUFFER_SIZE 128:
+        real	0m0.045s
+        user	0m0.003s
+        sys	0m0.020s
+
+        real	0m0.010s
+        user	0m0.002s
+        sys	0m0.006s
+
+BUFFER_SIZE 16:
+        real	0m0.190s
+        user	0m0.005s
+        sys	0m0.097s
+
+        real	0m0.027s
+        user	0m0.005s
+        sys	0m0.020s
+
+With the growth of the buffer, the time of execution gets less
+Adding O_SYNC flag sagnificantly slows the execution
