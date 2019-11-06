@@ -1,32 +1,39 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <fcntl.h>
 
-int main(){
-    FILE *in, *out;
-    char* inp = malloc(sizeof(char)* 50);
-    char* addr = malloc(sizeof(char)* 50);
-    scanf("%s", inp);
-    int i = 6;
-    while (inp[i] != '\0')
-    {
-        strcat(addr, &inp[i]);
-        i++;
+int main(int argc, char *argv[]) {
+    int *files;
+    int num_files = argc - 1;
+    if (argc > 1) {
+        short append = 0;
+
+        if (strcmp("-a", argv[1]) == 0) {
+            num_files--;
+            append = 1;
+        }
+
+        files = malloc(sizeof(int) * (argc - 1));
+        int j = 0;
+        for (int i = argc - num_files; i < argc; i++) {
+            if (append){
+                files[j] = fopen(argv[i], 'a');
+            }else{
+                files[j] = fopen(argv[i], 'w');
+            }
+            j++;
+        }
     }
-    printf("%s", addr);
-    
-    in = fopen(addr, "r");
-    out = fopen("ex2.txt", &inp[5]);
 
-    char* ans = malloc(sizeof(char)*10);
-    fgets(ans, 10, in);
-    fprintf(out, "%s", ans);
+    char buff[1024];
+    size_t len = 0;
+    while (fgets(buff, 1024, stdin)) {
+        len = strlen(buff);
+        for (int i = 0; i < num_files; i++)
+            write(files[i], buff, len);
+    }
 
-    free(inp);
-    free(addr);
-    fclose(in);
-    fclose(out);
+    for (int i = 0; i < num_files; i++)
+        close(files[i]);
 
     return 0;
 }
